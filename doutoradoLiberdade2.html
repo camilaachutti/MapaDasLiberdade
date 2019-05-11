@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapa das Liberdades</title>
+  <link rel="stylesheet" type="text/css" href="estiloDoutorado.css">
+</head>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  
+    function PopUpEx(hideOrshow) {
+        if (hideOrshow == 'hide') document.getElementById('ac-wrapper-ex').style.display = "none";
+        else document.getElementById('ac-wrapper-ex').removeAttribute('style');
+    }
+    
+
+
+    function hideNow(e) {
+        if (e.target.id == 'ac-wrapper-ex') document.getElementById('ac-wrapper-ex').style.display = 'none';
+    }
+
+
+    function PopUpAl(hideOrshow) {
+        if (hideOrshow == 'hide') document.getElementById('ac-wrapper-al').style.display = "none";
+        else document.getElementById('ac-wrapper-al').removeAttribute('style');
+    }
+    
+
+
+    function hideNow(e) {
+        if (e.target.id == 'ac-wrapper-al') document.getElementById('ac-wrapper-al').style.display = 'none';
+    }
+
+
+  </script>
+
+<!-- POP UP EXPRESSÃO -->
+ <div id="ac-wrapper-ex" style='display:none' onClick="hideNow(event)">
+    <div id="popup-ex">
+        <center>
+          <h2>Liberdade de Expressão</h2>
+             <h4>Limites</h4>
+             <ul>
+               <li>Bem comum</li>
+               <li>Vedação à prática do racismo</li>
+               <li>Dignidade da Pessoa Humana</li>
+               <li>Vedação ao discurso de ódio</li>
+               <li>Vedação ao Anonimato</li>
+               <li>Direito da Personalidade</li>
+               <li>Dever proteção</li>
+             </ul> 
+              <h4>Conteúdo</h4>
+              <ul>
+                <li>Universal</li>
+                <li>Várias espécies</li>
+                <li>Regime Jurídico</li>
+              </ul>  
+            <input class="exitPop" type="submit" name="submit" value="fechar" onClick="PopUpEx('hide')" />
+        </center>
+    </div>
+</div>
+
+<!-- POP UP ALUNO -->
+
+<div id="ac-wrapper-al" style='display:none' onClick="hideNow(event)">
+    <div id="popup-al">
+        <center>
+          <h2>Liberdade do Aluno</h2>
+             <h4>Limites</h4>
+             <ul>
+               <li>Condição de Pessoa Vulnerável</li>
+             </ul> 
+              <h4>Conteúdo</h4>
+              <ul>
+                <li>?</li>
+              </ul>  
+            <input class="exitPop" type="submit" name="submit" value="fechar" onClick="PopUpAl('hide')" />
+        </center>
+    </div>
+</div>
+
+<!-- GRÁFICO -->
+  <h1>Mapa das Liberdades</h1>
+<svg width="1280" height="960" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="1282" height="962" id="canvas_background" fill="#fff"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_4" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path onclick="PopUpEx('show')" stroke="#000" id="svg_1" d="m65.49964,471.4378c0,-239.22668 257.09684,-433.00028 574.50035,-433.00028c317.40351,0 574.50035,193.77361 574.50035,433.00028c0,239.22668 -257.09684,433.00028 -574.50035,433.00028c-317.40351,0 -574.50035,-193.77361 -574.50035,-433.00028z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+  <text x="550">
+    <textPath xlink:href="#svg_1">
+    Liberdade de Expressão
+    </textPath>
+  </text>
+  <path stroke="#000" id="svg_6" d="m186.99973,662.43793c0,-106.62992 202.72388,-193.00015 453.00027,-193.00015c250.27639,0 453.00027,86.37023 453.00027,193.00015c0,106.62992 -202.72388,193.00015 -453.00027,193.00015c-250.27639,0 -453.00027,-86.37023 -453.00027,-193.00015z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+  <text x="1000">
+    <textPath xlink:href="#svg_6">
+    Liberdade Científica
+    </textPath>
+  </text>
+  <path stroke="#000" id="svg_10" d="m186.99976,268.43754c0,-106.62992 202.72388,-193.00015 453.00027,-193.00015c250.27639,0 453.00027,86.37023 453.00027,193.00015c0,106.62992 -202.72388,193.00015 -453.00027,193.00015c-250.27639,0 -453.00027,-86.37023 -453.00027,-193.00015z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+  <text width="500">
+    <textPath xlink:href="#svg_10">
+    Liberdade de Opinião
+    </textPath>
+  </text>
+  <path stroke="#000" id="svg_2" d="m273.49978,489.43781c0,-172.37581 164.01391,-312.00021 366.50022,-312.00021c202.48631,0 366.50022,139.6244 366.50022,312.00021c0,172.37581 -164.01391,312.00021 -366.50022,312.00021c-202.48631,0 -366.50022,-139.6244 -366.50022,-312.00021z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+    <text width="500">
+    <textPath xlink:href="#svg_2">
+    Liberdade Acadêmica
+    </textPath>
+  </text>
+  <path stroke="#000" id="svg_8" d="m581.50038,492.43781c0,-87.84536 71.15474,-159.0001 159.0001,-159.0001c87.84536,0 159.0001,71.15474 159.0001,159.0001c0,87.84536 -71.15474,159.0001 -159.0001,159.0001c-87.84536,0 -159.0001,-71.15474 -159.0001,-159.0001z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+   <text x="500">
+    <textPath xlink:href="#svg_8">
+    Liberdade do Professor
+    </textPath>
+  </text>
+  <path stroke="#000" id="svg_9" d="m730.50046,545.49666c0,-27.65683 20.58565,-50.05885 46.00003,-50.05885c25.41438,0 46.00003,22.40203 46.00003,50.05885c0,27.65683 -20.58565,50.05885 -46.00003,50.05885c-25.41438,0 -46.00003,-22.40203 -46.00003,-50.05885z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+   <text width="500">
+    <textPath xlink:href="#svg_9">
+    Ensinar
+    </textPath>
+  </text>
+  <path stroke="#000" id="svg_11" d="m478.000121,436.189664c0,-24.585651 20.585648,-44.500029 46.000028,-44.500029c25.41438,0 46.000028,19.914377 46.000028,44.500029c0,24.585651 -20.585648,44.500029 -46.000028,44.500029c-25.41438,0 -46.000028,-19.914377 -46.000028,-44.500029z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" fill="#044B94" fill-opacity="0.4"/>
+   <text width="500">
+    <textPath xlink:href="#svg_11">
+   Aprender
+    </textPath>
+  </text>
+  <path onclick="PopUpAl('show')" stroke="#000" id="svg_12" d="m361.50017,492.43781c0,-87.84536 71.15474,-159.0001 159.0001,-159.0001c87.84536,0 159.0001,71.15474 159.0001,159.0001c0,87.84536 -71.15474,159.0001 -159.0001,159.0001c-87.84536,0 -159.0001,-71.15474 -159.0001,-159.0001z" stroke-opacity="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="1.5" fill="#044B94" fill-opacity="0.4"/>
+   <text width="500">
+    <textPath xlink:href="#svg_12">
+      Liberdade do Aluno
+    </textPath>
+  </text>
+ </g>
+</svg>
+</body>
+</html>
